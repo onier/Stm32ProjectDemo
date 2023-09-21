@@ -13,7 +13,6 @@ extern void startTestTask();
 
 void EnableUart2Sdio() {
     AddUartSdio(&huart2);
-    vTaskDelay(500);
     printf("uart2 has enable sdio \n");
 }
 

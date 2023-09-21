@@ -66,5 +66,6 @@ int _write(int file, char *ptr, int len) {
 
 void AddUartSdio(UART_HandleTypeDef *uartHandleTypeDef) {
     UartSdioHandler *uartSdioHandler1 = malloc(sizeof(UartSdioHandler));
+    uartSdioHandler1->_huart = uartHandleTypeDef;
     DL_APPEND(uartSdioHandler, uartSdioHandler1);
 }
